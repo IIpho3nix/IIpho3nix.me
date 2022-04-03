@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" sizes="512x512" href="assets/logo.png" />
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/general.css" />
+    <link rel="stylesheet" type="text/css" href="./css/topbar.css" />
     <title>IIpho3nix.me</title>
     <meta content="IIpho3nix" property="og:title" />
     <meta content="IIpho3nix's Website" property="og:description" />
@@ -12,27 +13,14 @@
     <meta content="#fc0000" data-react-helmet="true" name="theme-color" />
   </head>
   <body>
-    <div id="particles-js"></div>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"
-    ></script>
-    <script type="text/javascript" src="js/particle.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-    <div class="box">
-      <div class="section" id="sec1">
-        <h1>IIpho3nix.me</h1>
-      </div>
+    
+    <div class="top">
+      <a id="home" onclick="document.getElementById('frame').setAttribute('src', 'html/home.html')">Home</a>
+      <a id="about" onclick="document.getElementById('frame').setAttribute('src', 'html/about.html')">About</a>
+      <a id="projects" onclick="document.getElementById('frame').setAttribute('src', 'html/projects.html')">Projects</a>
     </div>
-    <div class="box">
-      <div class="section" id="sec2">
-        <input
-          type="submit"
-          name=""
-          value="Github"
-          onclick="redirect('https://github.com/IIpho3nix')"
-        />
-      </div>
-    </div>
+
+    <iframe src="html/home.html" id="frame"></iframe>
   </body>
 </html>
