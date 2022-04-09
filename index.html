@@ -16,11 +16,11 @@
     <script type="text/javascript" src="js/redirect.js"></script>
     
     <div class="top">
-      <a id="home" onclick="document.getElementById('frame').setAttribute('src', 'html/home.html')">Home</a>
-      <a id="about" onclick="document.getElementById('frame').setAttribute('src', 'html/about.html')">About</a>
-      <a id="projects" onclick="document.getElementById('frame').setAttribute('src', 'html/projects.html')">Projects</a>
+      <a id="home" href="html/home.html" target="frame">Home</a>
+      <a id="about" href="html/about.html" target="frame">About</a>
+      <a id="projects" href="html/projects.html" target="frame">Projects</a>
     </div>
 
-    <iframe src="html/home.html" id="frame"></iframe>
+    <iframe src="html/home.html" id="frame" name="frame"></iframe>
   </body>
 </html>
