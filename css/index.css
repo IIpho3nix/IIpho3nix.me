@@ -40,7 +40,6 @@ label .burger {
 }
 
 label .burger::before,
-
 label .burger .bar, label .burger::after {
   position: absolute;
   left: 0;
@@ -94,7 +93,7 @@ nav::before {
   left: 0;
   z-index: -1;
   width: 25em;
-  background: #333;
+  background: #16144f;
   content: "";
   transform: skewX(15deg) translateX(-100%);
   transform-origin: bottom left;
@@ -145,7 +144,7 @@ nav a:nth-child(6) {
 }
 
 nav a:hover, nav a:focus {
-  color: black;
+  color: #44c9da;
 }
 
 [id=navcheck]:checked + label::before {

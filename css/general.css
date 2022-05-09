@@ -1,6 +1,10 @@
 html {
   background: #262626;
   user-select: none;
+  background-image: url("../assets/background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
 body {
@@ -32,6 +36,7 @@ iframe {
 .sans-serif {
   font-family: sans-serif;
   color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .project {
@@ -102,6 +107,7 @@ iframe {
 .rainbow {
   animation: color-change 7s infinite;
   font-family: sans-serif;
+  text-shadow:1px 1px 30px, 1px 1px 30px;
 }
 
 @keyframes color-change {
