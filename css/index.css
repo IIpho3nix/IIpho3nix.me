@@ -93,7 +93,7 @@ nav::before {
   left: 0;
   z-index: -1;
   width: 25em;
-  background: #16144f;
+  background: #252525;
   content: "";
   transform: skewX(15deg) translateX(-100%);
   transform-origin: bottom left;
@@ -144,7 +144,7 @@ nav a:nth-child(6) {
 }
 
 nav a:hover, nav a:focus {
-  color: #44c9da;
+  color: #808080;
 }
 
 [id=navcheck]:checked + label::before {
