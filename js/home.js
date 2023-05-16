@@ -15,7 +15,7 @@ function search() {
         searchUrl = "https://you.com/search?q=" + encodeURIComponent(query);
     }
     
-    window.open(searchUrl, "_blank");
+    window.open(searchUrl, "_top");
 }
 
 document.addEventListener('keypress', (event) => {
