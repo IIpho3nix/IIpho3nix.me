@@ -27,6 +27,7 @@ iframe {
   transform: translate(-50%, -50%);
   padding: 10px;
   color: transparent;
+  text-align: center;
 }
 
 .horizontal {
