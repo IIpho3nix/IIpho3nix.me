@@ -25,6 +25,7 @@ label::before {
   opacity: 0; 
   pointer-events: none;
   transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  backdrop-filter: blur(8px);
 }
 
 label .burger {
