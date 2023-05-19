@@ -27,6 +27,17 @@ function search() {
         "https://www.youtube.com/results?search_query=" +
         encodeURIComponent(query);
       break;
+    case "steam":
+      searchUrl =
+        "https://store.steampowered.com/search/?term=" +
+        encodeURIComponent(query);
+      break;
+    case "github":
+      searchUrl =
+        "https://github.com/search?q=" +
+        encodeURIComponent(query) +
+        "&type=repositories";
+      break;
     default:
       searchUrl = "";
       break;
