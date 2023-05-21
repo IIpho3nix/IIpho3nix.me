@@ -1,4 +1,4 @@
-function search() {
+const search = () => {
   var query = document.getElementById("search-input").value;
   var selectedEngine = document.getElementById("search-engine").value;
 
@@ -44,7 +44,7 @@ function search() {
   }
 
   window.open(searchUrl, "_top");
-}
+};
 
 document.addEventListener("keypress", (event) => {
   if (event.key === "Enter") {
