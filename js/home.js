@@ -32,6 +32,14 @@ const search = () => {
         "https://store.steampowered.com/search/?term=" +
         encodeURIComponent(query);
       break;
+    case "steamdb":
+      searchUrl =
+        "https://steamdb.info/search/?a=app&q=" + encodeURIComponent(query);
+      break;
+    case "protondb":
+      searchUrl =
+        "https://www.protondb.com/search?q=" + encodeURIComponent(query);
+      break;
     case "github":
       searchUrl =
         "https://github.com/search?q=" +
