@@ -1,10 +1,6 @@
 html {
-  background: #262626;
+  background: #080a17;
   user-select: none;
-  background-image: url("../assets/background.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
 }
 
 body {
@@ -36,8 +32,9 @@ iframe {
 
 .sans-serif {
   font-family: sans-serif;
-  color: white;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  color: #ffffee;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .project {
@@ -46,7 +43,7 @@ iframe {
   border-radius: 10px;
   display: inline-block;
   text-decoration: none;
-  background-color: rgb(29, 29, 29);
+  background-color: #141728;
   cursor: pointer;
   height: 300px;
   width: 300px;
@@ -55,60 +52,42 @@ iframe {
 }
 
 .project:hover {
-  background-color: rgb(66, 66, 66);
+  filter: brightness(150%);
 }
 
 .project * {
   display: block;
-  color: white;
+  color: #ffffee;
   margin: auto;
 }
 
 .contact a {
-  color: white;
+  color: #ffffee;
   padding: 6px 6px 6px 6px;
   line-height: 5px;
   border-radius: 10px;
   display: inline-block;
   text-decoration: none;
-  background-color: rgb(29, 29, 29);
+  background-color: #141728;
   cursor: pointer;
   width: 80px;
 }
 
 .contact a:hover {
-  background-color: rgb(66, 66, 66);
+  filter: brightness(150%);
 }
 
 .contact a * {
   display: block;
-  color: white;
+  color: #ffffee;
   margin-left: auto;
   margin-right: auto;
-}
-
-.btn {
-  display: flex;
-  justify-content: center;
-  margin: 15px auto;
-  border: 2px solid #353535;
-  padding: 14px 40px;
-  color: white;
-  border-radius: 24px;
-  cursor: pointer;
-  font-family: sans-serif;
-  text-decoration: none;
-  width: 70px;
-}
-
-.btn:hover {
-  background: #353535;
 }
 
 .rainbow {
   animation: color-change 7s infinite;
   font-family: sans-serif;
-  text-shadow:1px 1px 30px, 1px 1px 30px;
+  text-shadow: 1px 1px 30px, 1px 1px 30px;
 }
 
 @keyframes color-change {

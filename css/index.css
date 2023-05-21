@@ -20,9 +20,9 @@ label::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(30, 30, 30, 0.75);
+  background-color: rgba(20, 23, 40, 0.75);
   content: "";
-  opacity: 0; 
+  opacity: 0;
   pointer-events: none;
   transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   backdrop-filter: blur(8px);
@@ -41,7 +41,8 @@ label .burger {
 }
 
 label .burger::before,
-label .burger .bar, label .burger::after {
+label .burger .bar,
+label .burger::after {
   position: absolute;
   left: 0;
   display: block;
@@ -94,7 +95,7 @@ nav::before {
   left: 0;
   z-index: -1;
   width: 25em;
-  background: #252525;
+  background: #141728;
   content: "";
   transform: skewX(15deg) translateX(-100%);
   transform-origin: bottom left;
@@ -112,7 +113,7 @@ nav a {
   margin: 0.5em 0;
   padding: 0.2em 2em;
   font-size: 1.5em;
-  color: white;
+  color: #ffffee;
   text-decoration: none;
   font-weight: 500;
   transform: translateX(-100%);
@@ -144,40 +145,42 @@ nav a:nth-child(6) {
   transition-delay: 0s, 350ms;
 }
 
-nav a:hover, nav a:focus {
-  color: #808080;
+nav a:hover,
+nav a:focus {
+  filter: brightness(75%);
 }
 
-[id=navcheck]:checked + label::before {
+[id="navcheck"]:checked + label::before {
   opacity: 1;
   pointer-events: auto;
 }
 
-[id=navcheck]:checked + label .burger::before, [id=navcheck]:checked + label .burger::after {
+[id="navcheck"]:checked + label .burger::before,
+[id="navcheck"]:checked + label .burger::after {
   width: 141.42%;
 }
 
-[id=navcheck]:checked + label .burger::before {
+[id="navcheck"]:checked + label .burger::before {
   transform: rotate(45deg) translateY(-50%);
 }
 
-[id=navcheck]:checked + label .burger::after {
+[id="navcheck"]:checked + label .burger::after {
   transform: rotate(-45deg) translateY(50%);
 }
 
-[id=navcheck]:checked + label .burger .bar {
+[id="navcheck"]:checked + label .burger .bar {
   transform: scale(0.1);
 }
 
-[id=navcheck]:checked ~ nav {
+[id="navcheck"]:checked ~ nav {
   transform: translateX(0);
 }
 
-[id=navcheck]:checked ~ nav::before {
+[id="navcheck"]:checked ~ nav::before {
   transform: skewX(15deg) translateX(0);
 }
 
-[id=navcheck]:checked ~ nav a {
+[id="navcheck"]:checked ~ nav a {
   transform: translateX(0);
 }
 
@@ -194,8 +197,8 @@ nav a:hover, nav a:focus {
 
 body {
   overflow-x: hidden;
-  background: #444;
-  color: white;
+  background: #141728;
+  color: #ffffee;
   font: 1em/1.4 "lato";
 }
 

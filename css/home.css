@@ -1,67 +1,67 @@
 .search-container {
-    text-align: center;
-    margin-top: 50px;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .search-bar {
-    display: flex;
-    align-items: center;
-    background-color: #333;
-    border-radius: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #141728;
+  border-radius: 10px;
 }
 
-.search-bar input[type=text] {
-    font-family: sans-serif;
-    flex: 1;
-    width: 300px;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    background-color: transparent;
-    color: #fff;
-    outline: none;
+.search-bar input[type="text"] {
+  font-family: sans-serif;
+  flex: 1;
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  color: #ffffee;
+  outline: none;
 }
 
 @media only screen and (max-width: 600px) {
-    .search-bar input[type=text] {
-        width: 135px;
-    }
+  .search-bar input[type="text"] {
+    width: 135px;
+  }
 }
 
 .search-bar button {
-    width: 36px;
-    height: 36px;
-    background-image: url("../assets/search.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: none;
-    background-color: #333;
-    color: #fff;
-    border-radius: 0 10px 10px 0;
-    cursor: pointer;
+  width: 36px;
+  height: 36px;
+  background-image: url("../assets/search.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  background-color: #141728;
+  color: #ffffee;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
 }
 
 .search-bar button:hover {
-    background-color: #3b3b3b;
+  filter: brightness(150%);
 }
 
 .search-container select {
-    width: 120px;
-    font-family: sans-serif;
-    font-size: 16px;
-    border: none;
-    background-color: #333;
-    color: #fff;
-    cursor: pointer;
+  width: 120px;
+  font-family: sans-serif;
+  font-size: 16px;
+  border: none;
+  background-color: #141728;
+  color: #ffffee;
+  cursor: pointer;
 }
 
 .notice {
-    position: fixed;
-    bottom: 5px;
-    left: 5px;
-    background-color: transparent;
-    color: white;
-    font-family: sans-serif;
-    padding: 10px;
-    font-size: 12px;
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
+  background-color: transparent;
+  color: #ffffee;
+  font-family: sans-serif;
+  padding: 10px;
+  font-size: 12px;
 }
