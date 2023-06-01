@@ -75,7 +75,27 @@
       <button onclick="arecibodecdrawCanvas()">Draw</button>
       <br />
       <br />
-      <canvas id="arecibodecbinaryCanvas"></canvas>
+      <canvas
+        class="arecibodecbinaryCanvas"
+        id="arecibodecbinaryCanvas"
+      ></canvas>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <h2 class="rainbow">Base64</h2>
+    <div id="base64">
+      <input
+        type="text"
+        id="base64Input"
+        placeholder="Base64 or string"
+        autocomplete="off"
+      />
+      <br />
+      <br />
+      <button onclick="encodeBase64()">Encode</button>
+      <button onclick="decodeBase64()">Decode</button>
     </div>
   </div>
   <script type="text/javascript" src="../js/tools.js"></script>

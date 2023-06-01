@@ -68,18 +68,22 @@ input[type="number"] {
   background-color: black;
 }
 
+.areciboenccanvas {
+  display: none;
+}
+
 .areciboenccanvas .row:first-child .square:first-child {
-  border-top-left-radius: 5px;
+  border-top-left-radius: 3px;
 }
 
 .areciboenccanvas .row:first-child .square:last-child {
-  border-top-right-radius: 5px;
+  border-top-right-radius: 3px;
 }
 
 .areciboenccanvas .row:last-child .square:first-child {
-  border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 3px;
 }
 
 .areciboenccanvas .row:last-child .square:last-child {
-  border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 3px;
 }

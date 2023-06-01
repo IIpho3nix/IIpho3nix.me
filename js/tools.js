@@ -1,5 +1,7 @@
 const arecibodecdrawCanvas = () => {
-  var binaryInput = document.getElementById("arecibodecbinaryInput").value;
+  var binaryInput = document
+    .getElementById("arecibodecbinaryInput")
+    .value.replace(/\s/g, "");
   var arecibodecwidth = parseInt(
     document.getElementById("arecibodecwidth").value
   );
@@ -60,6 +62,7 @@ const createCanvas = () => {
 
   areciboenccanvas.style.width = `${width * 10}px`;
   areciboenccanvas.style.height = `${height * 10}px`;
+  areciboenccanvas.style.display = "inline-block";
 
   for (let i = 0; i < height; i++) {
     const row = document.createElement("div");
@@ -138,3 +141,27 @@ document
   .addEventListener("input", createCanvas);
 areciboencencodeBtn.addEventListener("click", encodeCanvas);
 areciboencclearBtn.addEventListener("click", clearCanvas);
+
+const encodeBase64 = () => {
+  const input = document.getElementById("base64Input");
+  const inputValue = input.value;
+
+  const encoder = new TextEncoder();
+  const data = encoder.encode(inputValue);
+  const encodedValue = btoa(String.fromCharCode(...data));
+
+  input.value = encodedValue;
+};
+
+const decodeBase64 = () => {
+  const input = document.getElementById("base64Input");
+  const inputValue = input.value;
+
+  const decodedData = Array.from(atob(inputValue), (char) =>
+    char.charCodeAt(0)
+  );
+  const decoder = new TextDecoder();
+  const decodedValue = decoder.decode(new Uint8Array(decodedData));
+
+  input.value = decodedValue;
+};
