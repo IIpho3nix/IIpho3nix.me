@@ -18,18 +18,23 @@ input {
 
 button {
   font-family: sans-serif;
-  border-radius: 10px;
+  border-radius: 6px;
   flex: 1;
   padding: 10px;
   font-size: 16px;
   border: none;
   background-color: #141728;
   color: #ffffee;
+  transition: transform 0.3s;
   outline: none;
 }
 
 button:hover {
   filter: brightness(150%);
+}
+
+button.clicked {
+  animation: clickAnim 200ms ease-in-out;
 }
 
 canvas {

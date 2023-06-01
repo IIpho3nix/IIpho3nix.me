@@ -49,6 +49,11 @@ iframe {
   width: 300px;
   font-family: sans-serif;
   text-align: center;
+  transition: transform 0.3s;
+}
+
+.project.clicked {
+  animation: clickAnim 200ms ease-in-out;
 }
 
 .project:hover {
@@ -71,6 +76,11 @@ iframe {
   background-color: #141728;
   cursor: pointer;
   width: 80px;
+  transition: transform 0.3s;
+}
+
+.contact a.clicked {
+  animation: clickAnim 200ms ease-in-out;
 }
 
 .contact a:hover {
@@ -123,5 +133,17 @@ iframe {
   }
   100% {
     color: #ff020a;
+  }
+}
+
+@keyframes clickAnim {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
   }
 }

@@ -165,3 +165,14 @@ const decodeBase64 = () => {
 
   input.value = decodedValue;
 };
+
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    button.classList.add("clicked");
+    setTimeout(() => {
+      button.classList.remove("clicked");
+    }, 200);
+  });
+});

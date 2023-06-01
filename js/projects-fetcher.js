@@ -31,5 +31,16 @@ xhr.onload = () => {
         <br>
         </a></div><br>`;
   }
+
+  const buttons = document.querySelectorAll(".project");
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      button.classList.add("clicked");
+      setTimeout(() => {
+        button.classList.remove("clicked");
+      }, 200);
+    });
+  });
 };
 xhr.send();
