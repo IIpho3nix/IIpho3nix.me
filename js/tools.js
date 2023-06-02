@@ -166,6 +166,41 @@ const decodeBase64 = () => {
   input.value = decodedValue;
 };
 
+const encodeNumToAlpha = (num) => {
+  let result = "";
+
+  while (num >= 0) {
+    let remainder = num % 26;
+    result += String.fromCharCode(remainder + 65);
+    num = Math.floor((num - remainder) / 26) - 1;
+  }
+
+  return result.split("").reverse().join("");
+};
+
+const decodeNumFromAlpha = (str) => {
+  let result = 0;
+  for (let i = 0; i < str.length; i++) {
+    let digitValue = str.charCodeAt(i) - 65 + 1;
+    result = result * 26 + digitValue;
+  }
+  return result - 1;
+};
+
+const encodeNalpha = () => {
+  const input = document.getElementById("nalphaInput");
+  const inputValue = parseInt(input.value);
+
+  input.value = encodeNumToAlpha(inputValue);
+};
+
+const decodeNalpha = () => {
+  const input = document.getElementById("nalphaInput");
+  const inputValue = input.value;
+
+  input.value = decodeNumFromAlpha(inputValue);
+};
+
 const buttons = document.querySelectorAll("button");
 
 buttons.forEach((button) => {
