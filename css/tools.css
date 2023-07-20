@@ -37,7 +37,7 @@ button.clicked {
   animation: clickAnim 200ms ease-in-out;
 }
 
-canvas {
+.arecibodecbinaryCanvas {
   border-radius: 5px;
   border: 1px solid #ffffee;
 }
