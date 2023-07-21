@@ -113,7 +113,7 @@ nav a {
   margin: 0.5em 0;
   padding: 0.2em 2em;
   font-size: 1.5em;
-  color: #ffffee;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 500;
   transform: translateX(-100%);
@@ -198,7 +198,7 @@ nav a:focus {
 body {
   overflow-x: hidden;
   background: #141728;
-  color: #ffffee;
+  color: #ffffff;
   font: 1em/1.4 "lato";
 }
 

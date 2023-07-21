@@ -1,4 +1,4 @@
-Primary: #ffffee (RGB: 255, 255, 238)
+Primary: #ffffff (RGB: 255, 255, 238)
 Secondary: #080a17 (RGB: 8, 10, 23)
 Primary Button: #263075 (RGB: 38, 48, 117)
 Secondary Button: #10163b (RGB: 16, 22, 59)

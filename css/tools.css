@@ -12,7 +12,7 @@ input {
   font-size: 16px;
   border: none;
   background-color: #141728;
-  color: #ffffee;
+  color: #ffffff;
   outline: none;
 }
 
@@ -24,7 +24,7 @@ button {
   font-size: 16px;
   border: none;
   background-color: #141728;
-  color: #ffffee;
+  color: #ffffff;
   transition: transform 0.3s;
   outline: none;
 }
@@ -39,7 +39,7 @@ button.clicked {
 
 .arecibodecbinaryCanvas {
   border-radius: 5px;
-  border: 1px solid #ffffee;
+  border: 1px solid #ffffff;
 }
 
 .arecibodecbinaryCanvas {
@@ -57,7 +57,7 @@ input[type="number"] {
 }
 
 .areciboenccanvas {
-  border: 1px solid #ffffee;
+  border: 1px solid #ffffff;
   margin-top: 10px;
   display: inline-block;
   border-radius: 5px;

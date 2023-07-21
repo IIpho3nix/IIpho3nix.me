@@ -18,7 +18,7 @@
   font-size: 16px;
   border: none;
   background-color: transparent;
-  color: #ffffee;
+  color: #ffffff;
   outline: none;
 }
 
@@ -36,7 +36,7 @@
   background-size: contain;
   border: none;
   background-color: #141728;
-  color: #ffffee;
+  color: #ffffff;
   border-radius: 0 10px 10px 0;
   cursor: pointer;
 }
@@ -51,7 +51,7 @@
   font-size: 16px;
   border: none;
   background-color: #141728;
-  color: #ffffee;
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -60,7 +60,7 @@
   bottom: 5px;
   left: 5px;
   background-color: transparent;
-  color: #ffffee;
+  color: #ffffff;
   font-family: sans-serif;
   padding: 10px;
   font-size: 12px;
