@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../css/general.css" />
+    <link rel="stylesheet" type="text/css" href="../css/search.css" />
+    <script type="text/javascript" src="../js/search.js"></script>
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <script
+      type="text/javascript"
+      src=" https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js "
+    ></script>
+    <script type="text/javascript" src="../js/particles.js"></script>
+
+    <div class="box">
+      <h1 class="rainbow">Search</h1>
+      <noscript>
+        <p style="color: white; font-family: monospace">
+          <b>Warning:</b>
+          <br />
+          JavaScript is disabled in your browser. Search bar wont work
+        </p>
+      </noscript>
+      <div class="search-container">
+        <div class="search-bar">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Enter your search query"
+            autocomplete="off"
+            autofocus
+          />
+          <select id="search-engine">
+            <option value="google">Google</option>
+            <option value="bing">Bing</option>
+            <option value="duckduckgo">DuckDuckGo</option>
+            <option value="startpage">StartPage</option>
+            <option value="you">You</option>
+            <option value="youtube">YouTube</option>
+            <option value="steam">Steam</option>
+            <option value="steamdb">SteamDB</option>
+            <option value="protondb">ProtonDB</option>
+            <option value="github">Github</option>
+          </select>
+          <div style="width: 5px"></div>
+          <button onclick="search()"></button>
+        </div>
+      </div>
+    </div>
+    <div class="notice">
+      By using the search function, you will be redirected to a third-party
+      search engine. Please note that i am not affiliated with any of the search
+      engines.
+    </div>
+    <script type="text/javascript" src="../js/search-after.js"></script>
+  </body>
+</html>
