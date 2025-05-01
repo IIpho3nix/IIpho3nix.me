@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../css/general.css" />
+    <link rel="stylesheet" type="text/css" href="../css/render.css" />
+  </head>
+  <body>
+    <noscript>
+      <div
+        style="
+          color: white;
+          margin-left: calc(50vw - 300px);
+          font-family: monospace;
+        "
+      >
+        <b>Warning:</b>
+        <br />
+        JavaScript is disabled in your browser. Blog won't work
+      </div>
+    </noscript>
+    <div id="particles-js"></div>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.5/dist/purify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked-highlight/lib/index.umd.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/default.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+    <script type="text/javascript" src="../js/particles.js"></script>
+    <div id="content" style="display: none">
+      <div id="plaintext-wrapper">
+        <div class="horizontal">
+          <h1 class="rainbow" id="blog-title"></h1>
+        </div>
+        <div id="plaintext" spellcheck="false"></div>
+      </div>
+    </div>
+    <script type="text/javascript" src="../js/render.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../css/atelier-sulphurpool.css"
+    />
+  </body>
+</html>

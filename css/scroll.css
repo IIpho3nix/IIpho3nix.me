@@ -1,4 +1,7 @@
 body {
-  overflow: scroll;
+  overflow: auto;
   scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
+  scrollbar-color: #080a17 #141728;
 }

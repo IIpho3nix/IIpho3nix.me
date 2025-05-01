@@ -1,0 +1,38 @@
+.blog-container {
+  background-color: #141728;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 10px;
+  color: white;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  display: block;
+  transition: background-color 0.3s;
+  position: relative;
+  text-decoration: none;
+  scrollbar-color: #080a17 #141728;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.blog-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  color: white;
+}
+
+.blog-container .description {
+  color: #aaa;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.blog-container .meta {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  font-size: 12px;
+  color: #ccc;
+  text-align: right;
+}

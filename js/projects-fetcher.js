@@ -3,7 +3,9 @@ xhr.open("GET", "https://api.github.com/users/IIpho3nix/repos", true);
 xhr.responseType = "json";
 xhr.onload = () => {
   for (let i = 0; i < xhr.response.length; i++) {
-    document.body.innerHTML += `<div class="horizontal"><a class="project" href="${
+    document.getElementById(
+      "projects"
+    ).innerHTML += `<div class="horizontal"><a class="project" href="${
       xhr.response[i].html_url
     }" rel="noreferrer" target="_top" >
         <br>

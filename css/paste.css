@@ -18,6 +18,11 @@ body {
   color: #eeeeee;
   background: #141728;
   border-radius: 5px 5px 0 0;
+  overflow: auto;
+  scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
+  scrollbar-color: #080a17 #141728;
 }
 
 #plaintext:focus {

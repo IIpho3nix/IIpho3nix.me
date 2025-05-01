@@ -1,3 +1,7 @@
+body {
+  background-color: #080a17;
+}
+
 input {
   position: fixed;
   opacity: 0;
@@ -70,6 +74,10 @@ label .burger::after {
 input:focus + label .burger,
 label:hover .burger {
   opacity: 0.75;
+}
+
+#frame {
+  scrollbar-color: #080a17 #141728;
 }
 
 nav {
