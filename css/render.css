@@ -62,6 +62,10 @@ p:not(.rainbow) {
   color: #dedede;
 }
 
+li:not(.rainbow) {
+  color: #dedede;
+}
+
 code:not(.hljs) {
   background-color: #141728;
   padding: 0.2em 0.4em;
