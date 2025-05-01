@@ -31,11 +31,13 @@ fetch("../blog/" + params.get("file"))
     );
 
     document.getElementById("blog-title").innerText = params.get("title");
+  })
+  .then(() => {
+    const links = document.querySelectorAll("a");
+    links.forEach((link) => {
+      link.rel = "noreferrer";
+      link.target = "_top";
+    });
   });
-
-const links = document.querySelectorAll("a");
-links.forEach((link) => {
-  link.target = "_top";
-});
 
 document.getElementById("content").style.display = "block";
