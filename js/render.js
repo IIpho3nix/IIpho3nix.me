@@ -33,4 +33,9 @@ fetch("../blog/" + params.get("file"))
     document.getElementById("blog-title").innerText = params.get("title");
   });
 
+const links = document.querySelectorAll("a");
+links.forEach((link) => {
+  link.target = "_top";
+});
+
 document.getElementById("content").style.display = "block";
