@@ -43,22 +43,22 @@ body {
   user-select: text;
 }
 
-h1 {
+h1:not(.rainbow) {
   font-size: 180%;
   font-weight: bold;
 }
 
-h2 {
+h2:not(.rainbow) {
   font-size: 150%;
   font-weight: bold;
 }
 
-h3 {
+h3:not(.rainbow) {
   font-size: 120%;
   font-weight: bold;
 }
 
-p {
+p:not(.rainbow) {
   color: #dedede;
 }
 
