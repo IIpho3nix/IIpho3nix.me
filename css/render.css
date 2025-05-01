@@ -45,14 +45,21 @@ body {
 
 h1 {
   font-size: 180%;
+  font-weight: bold;
 }
 
 h2 {
   font-size: 150%;
+  font-weight: bold;
 }
 
 h3 {
   font-size: 120%;
+  font-weight: bold;
+}
+
+p {
+  color: #dedede;
 }
 
 code:not(.hljs) {
