@@ -2,6 +2,7 @@ var xhr = new XMLHttpRequest();
 xhr.open("GET", "https://api.github.com/users/IIpho3nix/repos", true);
 xhr.responseType = "json";
 xhr.onload = () => {
+  xhr.response.sort((a, b) => b.stargazers_count - a.stargazers_count);
   for (let i = 0; i < xhr.response.length; i++) {
     document.getElementById(
       "projects"
