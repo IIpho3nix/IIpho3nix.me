@@ -201,10 +201,10 @@ ssh -vv (your server ip)
 if it works, you will get random ssh banner data very slowly like so:
 
 ```text
-debug1: kex_exchange_identification: banner line 0: qpFx)}T%&`I
+debug1: kex_exchange_identification: banner line 0: qpFxT%&`I
 debug1: kex_exchange_identification: banner line 1: n$h
-debug1: kex_exchange_identification: banner line 2: *4s<ETB!{{\\tOS
-debug1: kex_exchange_identification: banner line 3: g?2g)eZ$qSu\\@q$R HIbmSs)fF9
+debug1: kex_exchange_identification: banner line 2: *4s<ETB!\\tOS
+debug1: kex_exchange_identification: banner line 3: g?2geZ$qSu\\@q$R HIbmSsfF9
 debug1: kex_exchange_identification: banner line 4: B~ee_>F'o
 ```
 
